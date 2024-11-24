@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وضعیت آب و هوا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header style="border-bottom: 2px solid rgba(235, 235, 235, 1);">
+            <div class="dropdown">
+                <img src="location.png" style="position:relative; top:10px;" alt="">
+                <button class="dropbtn" >انتخاب شهر<span style="color: black; margin-right: 10px;">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="#" data-city="تهران">تهران</a>
+                    <a href="#" data-city="مشهد">مشهد</a>
+                    <a href="#" data-city="اصفهان">اصفهان</a>
+                    <a href="#" data-city="شیراز">شیراز</a>
+                    <a href="#" data-city="تبریز">تبریز</a>
+                    <a href="#" data-city="اراک">اراک</a>
+                    <a href="#" data-city="البرز">البرز</a>
+                    <a href="#" data-city="گلستان">گلستان</a>
+                    <a href="#" data-city="یزد">یزد</a>
+                    <a href="#" data-city="بوشهر">بوشهر</a>
+                    <a href="#" data-city="اردبیل">اردبیل</a>
+                </div>
+            </div>
+            <h1 style="position: relative; top:10px;" >Starweather</h1>
+        </header>
+        <div id="weatherInfo" style="display: none; align-items:center;">
+            <img id="weatherIcon" src="default.png">
+            <h1 id="temperature">-°</h1>
+            <h1 id="cityDate"></h1>
+            <div class="details" style="width: 430px; border: 1px solid rgba(239, 239, 239, 1) ; border-radius: 12px;">
+                <h1 style=" line-height: 1.5; font-size: 15px; ">رطوبت <span id="humidity" style="margin-right: 330px;"></span>%</h1>
+                <h1 style=" line-height: 1.5; font-size: 15px; ">باد  <span id="windSpeed" style="margin-right: 300px;" ></span> km/h</h1>
+            </div>
+            <div id="forecast">
+                <h2 >پیش‌بینی روزهای آینده:</h2>
+                <div id="forecastCards">
+                    <img id="weatherIcon" src="default.png">
+                    
+                </div>
+            </div>
+            <div style="border-top: 2px solid rgba(235, 235, 235, 1); margin-top: 20px; display: flex; justify-content: center; align-items: center; padding: 10px;">
+                <img src="Logo.png" style="width: 30px; height: 30px; margin-left: 10px;">
+                <h2 style="font-size: 14px;">ساخته شده در <span style="color: rgb(104, 206, 179); ">استارکوچ</span></h2>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

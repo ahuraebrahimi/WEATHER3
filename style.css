@@ -1,0 +1,146 @@
+
+
+button{
+    font-family: 'Vazir', sans-serif;
+
+}
+
+body {
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    color: rgba(179, 179, 179, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    text-align: right;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#weatherInfo img {
+    width: 150px;
+    height: 150px;
+}
+#weatherInfo .details {
+    width: 488px;
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center; 
+}
+
+
+
+#forecastCards img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#forecastCards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    text-align: center;
+}
+
+.forecast-card img {
+    width: 55px;
+    height: 55px;
+}
+
+
+#temperature{
+    margin-top:24px ;
+    font-size: 50px;
+    font-weight: 600;
+}
+#cityDate{
+    margin-top:24px ;
+    font-size: 20px;
+    color: rgba(179, 179, 179, 1);
+}
+@media (max-width: 768px) {
+    #weatherInfo .details {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%; 
+    }
+
+    #forecastCards {
+        flex-wrap: wrap; 
+        gap: 10px; 
+    }
+
+    .forecast-card {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    #weatherInfo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #forecastCards {
+        gap: 5px;
+    }
+
+    .forecast-card {
+        flex: 1 1 calc(50% - 5px);
+    }
+}
